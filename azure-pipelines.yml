@@ -17,17 +17,13 @@ variables:
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  # environmentName: 'test-dev'
+  environmentName: ''
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
 
   # Python version: 3.8
   pythonVersion: '3.8'
-
-parameters:
-- name: environmentName
-  type: string
 
 stages:
 - stage: Build
